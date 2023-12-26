@@ -11,7 +11,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # torch.manual_seed(0)
 
-data = pd.read_csv('mnist_train.csv')
+data = pd.read_csv('mnist_test.csv')
 data = np.array(data)
 x = torch.tensor(data[0:10000,1:])
 y = torch.tensor(data[0:10000,0])
